@@ -43,7 +43,6 @@ export default class MinzuSeeder implements Seeder {
     const userPs11 = await bcrypt.hash('12345', 12);
     const userPs12 = await bcrypt.hash('12345', 12);
     const userPs13 = await bcrypt.hash('12345', 12);
-    const userPs14 = await bcrypt.hash('12345', 12);
 
     const adminPs1 = await bcrypt.hash('12345', 12);
     const adminPs2 = await bcrypt.hash('12345', 12);
