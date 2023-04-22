@@ -77,7 +77,7 @@ export class User {
   createdAt: Date;
 
   @UpdateDateColumn()
-  updatedAt: Date;
+  updated: Date;
 
   @DeleteDateColumn()
   deletedAt: Date | null;

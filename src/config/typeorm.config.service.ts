@@ -51,8 +51,9 @@ export class TypeOrmConfigService implements TypeOrmOptionsFactory {
       ],
       synchronize: this.configService.get('DB_SYNCHRONAIZE') === 'true',
       logging: this.configService.get('DB_LOGGING') === 'true', // sql 문 logging
-      keepConnectionAlive: true, // false 일 시 서버를 재시작 하면 DB disconnect
+      keepConnectionAlive: false, // false 일 시 서버를 재시작 하면 DB disconnect
       charset: 'utf8mb4', // 나중에 이모티콘도 추가하려 할 시 필요.
+      timezone: 'Asia/Seoul',
     };
   }
 }
